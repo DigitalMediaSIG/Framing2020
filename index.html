@@ -41,6 +41,11 @@
     	font-size: 4em;
     	letter-spacing: .3em;
     }
+    @media screen and (max-width: 991px) {
+      .glitch {
+    	  font-size: 3em;
+      }
+    }
     .header-bg {
       padding: 256px 0 200px !important; 
       margin-top: -60px;
@@ -54,7 +59,7 @@
     .speaker {
       padding-top: 40px;
       padding-bottom: 40px;
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid #999;
     }
     h1 {
       text-shadow:1px 1px 0px #f0f, -1px -1px 0 #0ff;
@@ -65,9 +70,12 @@
     }
     h2 {
       font-size: 2em !important;
-    }
-    h2 {
       font-weight: bold;
+    }
+    @media screen and (max-width: 991px) {
+      h2 {
+        font-size: 1.3em !important;
+      }
     }
     .btn-warning {
       color: white !important;
@@ -76,7 +84,7 @@
       box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     }
     .same-space {
-      height: 80px;
+      height: 100px;
     }
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255,255,255) !important;
@@ -85,8 +93,10 @@
       border: 3px dashed black;
       padding: 15px;
     }
-    #mainNav {
-      background-color: transparent !important;
+    @media screen and (min-width: 992px) {
+      #mainNav {
+        background-color: transparent !important;
+      }
     }
     .btn-secondary {
         background-color: transparent;
@@ -109,8 +119,14 @@
         outline: none;
     }
     .mt-3 {
-      min-width: 100px;
+        min-width: 100px;
     }
+    .dropdown-menu {
+        background-color: #000;
+    }
+    .dropdown-item {
+        color: #ffffff;
+    } 
     </style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -429,7 +445,7 @@
           <div class="col-md-4 col-lg-4 mb mb-0 ml-auto">
             <div class="px-4 text-center">
               <img src="assets/psmeros.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
-              <div class="pt-4 text-center">
+              <div class="pt-4 text-center" style="margin-bottom: 40px;">
                 <h5 class="title same-space">
                   <span class="d-block mb-1">Panayiotis <br/> Smeros</span>
                   <small class="h6 text-muted">EPFL</small>
